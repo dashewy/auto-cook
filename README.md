@@ -6,7 +6,8 @@ Pick meals from a recipe file and get a combined grocery list. There are two way
 
 Requires Python 3.10+ (uses `match` statements) and PyYAML:
 
-[!NOTE] If you only want to use json format then there is no dependencies needed
+> [!NOTE] 
+> If you only want to use json format then there is no dependencies needed
 
 ```bash
 pip install pyyaml
@@ -64,7 +65,8 @@ Can also use a json format although this is more to maintain and does not suppor
 
 Picks **1 breakfast**, **2 lunches**, and **3 dinners** at random (no repeats within a meal type), then merges their ingredients:
 
-[!NOTE] These are the default fields and they are configurable by adding `num_breakfast`, `num_lunch`, and `num_dinner` to your yaml/json file
+> [!NOTE] 
+> These are the default fields and they are configurable by adding `num_breakfast`, `num_lunch`, and `num_dinner` to your yaml/json file
 
 ```bash
 python rand_run.py
