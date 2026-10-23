@@ -24,19 +24,43 @@ YAML dish names use underscores (`eggs_on_toast`). JSON dish names use spaces (`
 ```yaml
 breakfast:
   eggs_on_toast:
-    loaf_sourdough: 1
-    eggs: 12
+    ingredients:
+      loaf_sourdough: 1
+      eggs: 12
+    instructions: |
+      Toast as much bread as you want
+      fry egg with salt and pepper
+    seasonings:
+      salt: 1
+      pepper: 1      
 lunch:
   sandwich:
-    deli_turkey: 2
-    sliced_cheese: 1
+    ingredients:
+      deli_turkey: 2
+      sliced_cheese: 1
+    instructions: ''
+    seasonings: {}
 dinner:
   spaghetti:
-    ground_beef: 1
-    spaghetti: 1
-    red_sauce: 1
+    ingredients:
+      ground_beef: 1
+      spaghetti: 1
+      red_sauce: 1
+    instructions: |
+      Cook spaghetti
+      Cook ground beef with onion
+      Combine with a little parm and olive oil
+    seasonings:
+      salt: 1
+      pepper: 1
+      basil: 1
+      garlic: 1
+      olive_oil: 1
+      parmesean: 1
 ```
 Add or edit dishes in the YAML file. Ingredient keys become grocery-list lines with underscores turned into spaces (`loaf_sourdough` → `loaf sourdough`).
+> [!NOTE]
+> Only the yaml setup supports the `instructions` and `seasonings` features. This is possible in json but can be headache to maintain.
 
 Can also use a json format although this is more to maintain and does not support comments or spaces
 
